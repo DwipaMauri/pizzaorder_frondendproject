@@ -1,0 +1,438 @@
+:root {
+    --base-color: #ff91008f;
+    --bs-white: #fff;
+  }
+  
+  .btn.btn-category {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #fff9f9;
+    --bs-btn-bg: var(--bs-white);
+    --bs-btn-color: #404040;
+    --bs-btn-bg: var(--base-white);
+    --bs-btn-border-color: #C2C2C2;
+    --bs-btn-border-radius: 0.5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--base-color);
+    --bs-btn-hover-border-color: var(--base-color);
+    --bs-btn-focus-shadow-rgb: var(--base-color);
+    --bs-btn-active-color: var(--alt-color);
+    --bs-btn-active-bg: var(--base-color);
+    --bs-btn-active-border-color: var(--alt-color);
+    width: 130px;
+  }
+
+.images {
+    background-image: url('../image/hero.png');
+    background-size: cover;
+    height: 600px;
+}
+
+li a {
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+    gap: 20px; 
+}
+
+li a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+}
+
+li a:hover {
+    color: #ff8f00; 
+}
+
+.centered {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 500px; 
+    text-align: center; 
+    color: #ff8f00;
+}
+
+.card-pizza {
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.card-pizza:hover {
+    background-color: #ff91008f;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-pizza img:nth-child(1) {
+    transition: transform 0.3s ease;
+}
+
+.card-pizza:hover img:nth-child(1){
+    transform: rotate(25deg);
+}
+
+.card-pizza {
+    position: relative;
+}
+  
+.topping-container {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-top: 30px;
+}
+  
+.btn-check:disabled + .btn-category {
+    background-color: #ccc;
+    color: #666;
+    border-color: #aaa;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-check:checked + .btn-category {
+    border-color: #ff8f00 !important;
+}
+
+.btn-check:disabled + .btn-category:hover {
+    background-color: #ccc;
+    color: #666;
+    border-color: #aaa;
+    opacity: 0.5;
+}
+
+.btn-check:not(:checked) + .btn-category:hover {
+    border-color: #ff8f00 ;
+    color: #ff8f00 !important;
+    background-color: white;
+    cursor: pointer;
+}
+
+.payment-summary {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    width: 275px; 
+    margin: 0 auto;
+
+}
+
+.payment-summary h5 {
+    margin-bottom: 10px;
+}
+
+.payment-summary ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.payment-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: gray;
+    margin-top: 12px;
+}
+
+.btn-order {
+    background-color: #ff8f00;
+    transition: transform 0.3s ease;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 98%;
+    flex-basis: 8%;
+    border-radius: 20px; 
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.btn-order:hover {
+  background-color: #7e3901ec;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px 40px;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Logo Section */
+.footer-logo {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.footer-find-us {
+    color: #ff8f00;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social-icons img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+    background-color: #ffc477a8;
+}
+
+/* Navigation Section */
+.footer-navigation {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.footer-title {
+    font-size: 18px;
+    color: #ff8f00;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+    font-weight: 450;
+    margin-top: 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff8f00;
+}
+
+/* Contact Section */
+.footer-contact {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    color: #ff8f00;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact img {
+    margin-right: 10px;
+}
+
+/* Location Section */
+.footer-location {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.footer-location h3 {
+    font-size: 18px;
+    color: #ff8f00;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.location-title {
+    font-weight: 700;
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+}
+
+.location-title img {
+    margin-right: 5px;
+}
+
+.location-details {
+    margin-left: 28px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ff8f00;
+}
+
+.bg-orange {
+    background-color: #ff8f00 !important;
+}
+
+.btn-orange {
+  padding: 8px 20px;
+  background-color: #ff8f00;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #cf7b0ebd;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"] {
+    display: none; /* Sembunyikan radio button asli */
+}
+
+/* Tambahkan lingkaran kustom untuk radio button */
+.custom-radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Tambahkan lingkaran di dalamnya menggunakan ::after */
+.custom-circle::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ff8f00; /* Warna lingkaran dalam */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Sembunyikan lingkaran dalam */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Tampilkan lingkaran dalam ketika dipilih */
+input[type="radio"]:checked + .custom-circle {
+    border-color: #ff8f00; /* Warna border lingkaran luar */
+}
+
+input[type="radio"]:checked + .custom-circle::after {
+    opacity: 1; /* Tampilkan lingkaran dalam */
+}
+
+/* Untuk efek hover */
+.custom-radio:hover .custom-circle {
+    border-color: #ff8f00;
+}
+
+.custom-btn-close {
+    background-color: #ff8f00 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 98%;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.custom-btn-close:hover {
+    background-color: #7e3901ec !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-close {
+    background-color: #ff8f00 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 5px 10px;
+    cursor: pointer !important;
+    width: 98% !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+    margin-top: 10px !important;
+}
+
+.btn-close:hover {
+    background-color: #7e3901ec !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+
+
+
+
